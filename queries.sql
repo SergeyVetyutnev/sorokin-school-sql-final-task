@@ -67,7 +67,7 @@ ORDER BY orders_count DESC;
 
 UPDATE products
 SET price = price + 100
-WHERE name = 'iPhone 15 Pro';
+WHERE name ILIKE '%iphone 15 pro%';
 
 SELECT * FROM products WHERE name = 'iPhone 15 Pro';
 
